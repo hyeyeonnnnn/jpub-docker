@@ -6,7 +6,7 @@ RUN apt-get update && \
     apt-get -y install apache2
     
 # 웹 기본 페이지를 생성한다.
-RUN echo 'Docker Container Application.' > /var/www/hmtl/index.html
+RUN echo 'Docker Container Application.' > /var/www/html/index.html
 
 # 필요한 작업 경로를 생성한다. (WORKDIR로 지정해도 됨)
 RUN mkdir /webapp
